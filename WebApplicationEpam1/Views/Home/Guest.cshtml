@@ -1,0 +1,35 @@
+﻿@model WebApplicationEpam1.ReviewesList
+@using LibraryDB
+
+@{
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<div id="review-block">
+    @* form to write review *@
+    @using (Html.BeginForm())
+    {
+        <h2>You can leave a review</h2>
+        <label for="text1">Name</label>
+        <br/>
+        @Html.TextBox("Name", null, new {required = true, placeholder = "Enter your Name", id = "text1", minlength = "3"})<br/>
+        <label for="text2">Review</label>
+        <br/>
+        @Html.TextArea("Text", new {required = true, id = "text2", minlength = "20"})<br/>
+        <br/>
+        <input class="send-review" type="submit" name="Button" value="Send Review"/>
+    }
+</div>
+
+<h1 class="blog-headline">User's reviews</h1>
+@foreach (Review review in Model.List)
+{
+    <div class="article-block">
+        <h2>@review.Name</h2>
+        <p>@review.Text</p>
+        <div class="date-block">
+            <span>@review.Date.ToString("yyyy.MM.dd hh:mm")</span>
+        </div>
+    </div>
+    <br/>
+}

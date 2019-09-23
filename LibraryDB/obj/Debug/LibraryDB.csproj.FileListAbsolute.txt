@@ -1,0 +1,12 @@
+D:\epam\WebApplicationEpam1\LibraryDB\obj\Debug\LibraryDB.csprojAssemblyReference.cache
+D:\epam\WebApplicationEpam1\LibraryDB\obj\Debug\LibraryDB.csproj.CoreCompileInputs.cache
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\LibraryDB.dll.config
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\LibraryDB.dll
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\LibraryDB.pdb
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\EntityFramework.dll
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\EntityFramework.SqlServer.dll
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\EntityFramework.xml
+D:\epam\WebApplicationEpam1\LibraryDB\bin\Debug\EntityFramework.SqlServer.xml
+D:\epam\WebApplicationEpam1\LibraryDB\obj\Debug\LibraryDB.csproj.CopyComplete
+D:\epam\WebApplicationEpam1\LibraryDB\obj\Debug\LibraryDB.dll
+D:\epam\WebApplicationEpam1\LibraryDB\obj\Debug\LibraryDB.pdb

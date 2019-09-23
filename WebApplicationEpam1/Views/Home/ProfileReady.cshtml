@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "ProfileReady";
+    Layout = null;
+}
+
+<h2>
+    Thanks for the answers @ViewData["Name"]. You prefer @ViewData["Vegetable"] and @ViewData["Fruit"]. Your favourite dish is @ViewData["Dish"].
+    @if (@ViewData["BadHabits"] == null)
+    {
+        <span>You don't have bad habits. </span>
+    }
+    else
+    {
+        <span>You have bad habits: </span>
+        List<string> strs = new List<string>(@ViewData["BadHabits"] as List<string>);
+        for (int i = 0; i < strs.Count; i++)
+        {
+            <span>@strs[i]</span>
+            if (i == strs.Count - 1)
+            {
+                <span>. </span>
+            }
+            else
+            {
+                <span>, </span>
+            }
+        }
+    }
+    Your answers are very important for us.
+</h2>
+@Html.ActionLink("Main Page", "Index")

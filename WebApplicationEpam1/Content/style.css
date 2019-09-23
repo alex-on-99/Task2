@@ -1,0 +1,213 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
+footer,header,body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2F2F2F;
+    background-color: #FCFC89;
+}
+
+a {
+    text-decoration: none;
+    color: #1C62B6;
+}
+
+a:visited {
+    color: #1C62B6;
+}
+
+a:active{
+    color: #1C62B6;
+}
+
+header {
+    width: 100%;
+}
+#header-line {
+    color: #1C619A;
+    background-color: #1C619A;
+    height: 2px;
+    width: 96%;
+    border-radius: 5px;
+}
+#logo-image{
+    width: 150px;
+    height: 100px;
+    float:left;
+    padding-left: 6%;
+}
+#blog-name {
+    float: left;
+    font-size: 55px;
+    color: #7DB33F;
+    padding-left: 3%;
+}
+main {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 70px;
+    overflow: auto;
+}
+#menu, #content-section {
+    background-color: #FAFAFA;
+    float: left;
+    border-radius: 4px;
+}
+
+
+#menu {
+    width: 15%;
+    border-top: 4px solid #1C619A;
+    margin-left: 3%;
+    color: #1C62B6;
+    text-align: left;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    overflow: auto;
+}
+
+#navigation-block {
+    border-top: 4px solid #1C619A;
+    font-size: 30px;
+    overflow:hidden;
+    width:auto;
+    width: 80%;
+}
+
+#menu h2{
+    margin-left: 15%;
+}
+
+#navigation-list li {
+    list-style-type: none;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#content-section {
+    width: 80%;
+}
+
+.menu-item {
+    text-decoration: none;
+}
+#content-section {
+    color: #3E3E3E;
+    border-radius: 20px;
+}
+
+.article-block {
+    width: auto;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.article-end-line {
+    color: #979797;
+    background-color: #979797;
+    font-size: 2px;
+    border-radius: 2px;
+}
+.blog-headline {
+    padding-left: 25%;
+    font-size: 30px;
+    color: #ffffff;
+    width: 75%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1C62B6;
+}
+.article-block p {
+    text-indent: 22px;
+}
+#date-block {
+    text-align: center;
+    margin-left: 100px;
+}
+#review-block {
+    width: auto;
+    margin-left: 20%;
+    font-size:18px;
+}
+#text1 {
+    width: 80%;
+    height: 30px;
+    font-size: 19px;
+    border-radius: 6px;
+    padding-left: 3%;
+}
+#text2 {
+    width: 80%;
+    height: 200px;
+    font-size: 19px;
+    border-radius: 6px;
+}
+#review-block input[type="submit"], #questions-submit-btn{
+    border-radius: 7px;
+    background-color: #65AD43;
+    width: 33%;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+#review-block input[type="submit"] {
+    margin-left: 24%;
+    width: 28%;
+}
+footer {
+    width: 100%;
+    background-color: #1C619A;
+    display: inline-block;
+    height: 30%;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    color: #ffffff;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+#copyright-block {
+    float: left;
+    display:inline-block;
+    font-size: 16px;
+    width:55%;
+    padding-left: 15%;
+    padding-right: 17%;
+}
+#to-top-btn {
+    float: left;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    background-color: #7DB33F;
+    font-size: 34px;
+    color: #ffffff;
+}
+#profile-h3{
+    padding-left:10%;
+}
+#questions-block{
+    padding-left:5%;
+}
+.my-list{
+    font-size: 18px;
+    padding-bottom:6px;
+}
+#questions{
+    font-size: 21px;
+    margin-left: 30%;
+}
+.textQustion {
+    width: 50%;
+    height: 30px;
+    font-size: 19px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#questions-submit-btn {
+    margin-left: 7%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

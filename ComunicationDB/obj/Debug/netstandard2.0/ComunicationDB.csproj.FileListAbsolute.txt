@@ -1,0 +1,6 @@
+D:\epam\WebApplicationEpam1\ComunicationDB\bin\Debug\netstandard2.0\ComunicationDB.deps.json
+D:\epam\WebApplicationEpam1\ComunicationDB\bin\Debug\netstandard2.0\ComunicationDB.dll
+D:\epam\WebApplicationEpam1\ComunicationDB\obj\Debug\netstandard2.0\ComunicationDB.csprojAssemblyReference.cache
+D:\epam\WebApplicationEpam1\ComunicationDB\obj\Debug\netstandard2.0\ComunicationDB.csproj.CoreCompileInputs.cache
+D:\epam\WebApplicationEpam1\ComunicationDB\obj\Debug\netstandard2.0\ComunicationDB.AssemblyInfoInputs.cache
+D:\epam\WebApplicationEpam1\ComunicationDB\obj\Debug\netstandard2.0\ComunicationDB.AssemblyInfo.cs

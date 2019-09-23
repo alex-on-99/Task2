@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+@helper CreateList(int type, params string[] strs)
+{
+    if (type > 0)
+    {
+        <ol class="my-list">
+            @foreach (string str in strs)
+            {
+                <li>@str</li>
+            }
+        </ol>
+    }
+    else
+    {
+        <ul class="my-list">
+            @foreach (string str in strs)
+            {
+                <li>@str</li>
+            }
+        </ul>
+    }
+}
+
+<h1 class="blog-headline">
+    User Profile
+</h1>
+<h3 id="profile-h3">
+    Filling out the form, you help us to develop.
+    Try to answer honestly all questions.
+</h3>
+<div id="questions-block">
+    <h2>
+        Questiuns:
+    </h2>
+    @CreateList(1, "What is your name?", "How old are you?", "Which is your favourite dish?", "Choose one fruit",
+        "Choose one vegetable", "Which bad habits do you have?")
+</div>
+
+<div id="questions">
+    @using (Html.BeginForm("Profile", "Home", FormMethod.Post))
+    {
+        <label class="question-label" for="nameQuestion">What is your name?</label>
+        <br/>
+        @Html.TextBox("nameQuestion", null, new {required = true, placeholder = "Enter your Name", @class = "textQustion", pattern = "[A-Za-z]{3,}"})<br/>
+        <label class="question-label" for="nameQuestion">How old are you?</label>
+        <br/>
+        @Html.TextBox("ageQuestion", null, new {required = true, placeholder = "Enter your Age", @class = "textQustion", pattern = "[1-9][0-9]{0,2}"})<br/>
+        <label class="question-label" for="dishQuestion">Which is your favourite dish?</label>
+        <br/>
+        @Html.TextBox("dishQuestion", null, new {required = true, placeholder = "Enter your favourite dish", @class = "textQustion", pattern = "[A-Za-z]{3,}"})<br/>
+        <label class="question-label" for="fruit">Choose one fruit</label>
+        <br/>
+        @Html.RadioButton("fruit", "apple", true)
+        <span class="radio-question">apple</span>
+        <br/>
+        @Html.RadioButton("fruit", "strawberry")
+        <span class="radio-question">strawberry</span>
+        <br/>
+        @Html.RadioButton("fruit", "orange")
+        <span class="radio-question">orange</span>
+        <br/>
+        <label class="question-label" for="fruit">Choose one vegetable</label>
+        <br/>
+        @Html.RadioButton("vegetable", "carrot", true)
+        <span class="radio-question">carrot</span>
+        <br/>
+        @Html.RadioButton("vegetable", "cabbage")
+        <span class="radio-question">cabbage</span>
+        <br/>
+        @Html.RadioButton("vegetable", "potato")
+        <span class="radio-question">potato</span>
+        <br/>
+        <label class="question-label" for="fruit">Which bad habits do you have?</label>
+        <br/>
+        <input type="checkbox" id="badHabit1" name="badHabit1" value="smoking"/>
+        <span class="radio-question">smoking</span>
+        <br/>
+        <input type="checkbox" id="badHabit2" name="badHabit2" value="alcohol"/>
+        <span class="radio-question">alcohol</span>
+        <br/>
+        <input type="checkbox" id="badHabit3" name="badHabit3" value="rude expressions"/>
+        <span class="radio-question">rude expressions</span>
+        <br/>
+        <input id="questions-submit-btn" type="submit" name="Button" value="Send"/>
+    }
+</div>

@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "healthy diet";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header name="top">
+        <img id="logo-image" alt="Apple" src="~/Content/images/apple.png" />
+        <h1 id="blog-name"><i>Healthy Diet</i></h1>
+        <hr id="header-line" />
+    </header>
+    <main>
+        <section id="content-section">
+            @RenderBody()
+        </section>
+        <aside id="menu">
+            <h2>Menu</h2>
+            <div id="navigation-block">
+                <ul id="navigation-list">
+                    <li>@Html.ActionLink("Main", "Index", new { @class = "menu-item" })</li>
+                    <li>@Html.ActionLink("Guest", "Guest", new { @class = "menu-item" })</li>
+                    <li>@Html.ActionLink("Profile", "Profile", new { @class = "menu-item" })</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="copyright-block">
+            All materials on this site are subject to copyright (including design). It is forbidden to copy, 
+            distribute (including by copying to other sites and resources on the Internet) 
+            or any other use of information and objects without the prior consent of the copyright holder.
+        </div>
+        <a href="#top"><button id="to-top-btn">&#8593;</button></a>
+    </footer>
+</body>
+</html>

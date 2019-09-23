@@ -1,0 +1,27 @@
+﻿@model WebApplicationEpam1.ArticlesList
+@using LibraryDB
+
+@{
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<h1 class="blog-headline">Articles about healthy diet</h1>
+@for (int i = 0; i < Model.List.Count; i++)
+{
+    <div class="article-block">
+        <h2>@Model.List[i].Name</h2>
+        <p class="container">@Model.List[i].Text</p>
+        <div class="date-block">
+            <span>@Model.List[i].Date.ToString("yyyy.MM.dd hh:mm")</span>
+        </div>
+    </div>
+
+    @* Don't put line after last article *@
+    if (i == Model.List.Count - 1)
+    {
+        <br/>
+        break;
+    }
+    <hr class="article-end-line"/>
+    <br/>
+}
